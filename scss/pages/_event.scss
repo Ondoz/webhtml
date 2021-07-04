@@ -1,0 +1,86 @@
+// PROMOTIONS
+.promotions {
+  margin: 4rem 0;
+
+  &__heading {
+    text-align: center;
+
+    h1 {
+      font-family: $extrabold;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.185rem;
+    }
+  }
+
+  &__image {
+    width: 508px;
+    height: 624px;
+    background: $color-white-2;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__card {
+    padding: 2rem;
+  }
+
+  &__title {
+    font-family: $extrabold;
+    margin: 1.5rem 0 0.5rem;
+  }
+}
+
+.event {
+  margin: 4rem 0 8rem;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    h1 {
+      font-family: $extrabold;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.185rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rem;
+  }
+
+  &__text {
+    margin-left: 4rem;
+  }
+
+  &__description {
+    margin-bottom: 1rem;
+    h1 {
+      font-family: $extrabold;
+      color: $color-primary-1;
+    }
+  }
+
+  &__time {
+    margin-bottom: 1.5rem;
+
+    h4 {
+      font-family: $extrabold;
+      color: $color-primary-1;
+      text-transform: uppercase;
+    }
+  }
+}

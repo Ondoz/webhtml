@@ -1,0 +1,70 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+  &__email {
+    background-color: $color-white-1;
+    width: 50%;
+    padding: 3.5rem 4rem;
+
+    h1 {
+      font-family: $extrabold;
+      text-transform: uppercase;
+      color: $color-dark-1;
+      margin-bottom: 1.5rem;
+    }
+
+    input {
+      padding: 1rem 2rem;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__form {
+    font-family: $semibold;
+
+    &--submit {
+      background-color: $color-primary-1;
+      font-family: $bold;
+      text-transform: uppercase;
+      color: $color-white-1;
+      border: 0;
+    }
+  }
+
+  &__description {
+    width: 50%;
+    padding: 3.5rem 4rem;
+
+    h1 {
+      font-family: $extrabold;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__details {
+    h4 {
+      font-family: $extrabold;
+      font-size: 1.185rem;
+      color: $color-primary-1;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    & > * {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.location-full {
+  margin: 8rem 0;
+
+  img {
+    width: 100%;
+  }
+}

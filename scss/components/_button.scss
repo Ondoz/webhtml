@@ -1,0 +1,22 @@
+// BUTTON
+.btn {
+  display: inline-block;
+  background-color: $color-primary-1;
+  padding: 1.125rem 2rem;
+  text-transform: uppercase;
+  font-family: $bold;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-primary-2;
+  }
+
+  &--link {
+    background-color: transparent;
+    font-family: $semibold;
+    text-transform: none;
+    padding: 0;
+    color: $color-primary-1;
+  }
+}

@@ -1,0 +1,165 @@
+// MENU
+.menu {
+  padding: 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__drink {
+    &--heading {
+      text-align: center;
+
+      h1 {
+        font-family: $extrabold;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  &__nav {
+    text-align: center;
+
+    &--link {
+      padding: 1rem;
+
+      &:hover {
+        color: $color-primary-1;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__card {
+    max-width: 22.5rem;
+    margin: 2rem 0;
+    background-color: $color-white-1;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      box-shadow: 5px 10px 40px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    h3 {
+      color: $color-dark-1;
+    }
+
+    &--image {
+      max-width: 22.5rem;
+      height: 18rem;
+
+      &__Cappucino {
+        background: url(../images/coffee-cappucinos.jpg);
+        background-size: cover;
+      }
+
+      &__Espresso {
+        background: url(../images/coffee-espresso.jpg);
+        background-size: cover;
+      }
+
+      &__Meno {
+        background: url(../images/coffee-meno.jpg);
+        background-size: cover;
+      }
+
+      &__Bakpao {
+        background: url(../images/bakpao-img.jpg);
+        background-size: cover;
+      }
+
+      &__Cookies {
+        background: url(../images/cookies-img.jpg);
+        background-size: cover;
+      }
+
+      &__FrenchFries {
+        background: url(../images/french-fries-img.jpg);
+        background-size: cover;
+      }
+    }
+
+    &--description {
+      padding: 1.5rem;
+
+      h3 {
+        font-family: $bold;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 0.875rem;
+        color: $color-gray-1;
+        line-height: 1.3;
+        padding: 0.5rem 0 0.875rem 0;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        font-family: $semibold;
+        color: $color-primary-1;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+
+// GALLERY
+.menu-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0;
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    &--image {
+      width: 19.7rem;
+      height: 19.7rem;
+      background-size: cover;
+      background-position: center;
+
+      &__1 {
+        background: linear-gradient(rgba($color-dark-2, 0.65)),
+          url(../images/menu-gallery-1.jpg);
+      }
+
+      &__2 {
+        background: linear-gradient(rgba($color-dark-2, 0.65)),
+          url(../images/menu-gallery-2.jpg);
+      }
+
+      &__3 {
+        background: linear-gradient(rgba($color-dark-2, 0.65)),
+          url(../images/menu-gallery-3.jpg);
+      }
+
+      &__4 {
+        background: linear-gradient(rgba($color-dark-2, 0.65)),
+          url(../images/menu-gallery-4.jpg);
+      }
+    }
+  }
+}

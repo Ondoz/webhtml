@@ -1,0 +1,25 @@
+// NAVBAR
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  z-index: 99;
+  font-family: $medium;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__link {
+    &:hover {
+      color: $color-primary-1;
+    }
+  }
+}

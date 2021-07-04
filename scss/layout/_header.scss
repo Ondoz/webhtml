@@ -1,0 +1,54 @@
+// HEADER
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../images/bg-header.jpg);
+  background-size: cover;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      padding-top: 2rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__cta {
+    margin-top: 2.5rem;
+  }
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background: url(../images/bg-header.jpg);
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-family: $extrabold;
+      text-transform: uppercase;
+    }
+
+    p {
+      padding-top: 1rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__cta {
+    padding-top: 1.5rem;
+  }
+}

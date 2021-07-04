@@ -1,0 +1,289 @@
+// FEATURES
+.features {
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 4.5rem;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4.5rem;
+    justify-content: center;
+  }
+
+  &__card {
+    text-align: center;
+
+    p {
+      margin-top: 2.5rem;
+      color: $color-primary-1;
+      font-family: $semibold;
+    }
+
+    &:not(:last-child) {
+      padding-right: 8rem;
+    }
+  }
+}
+
+// POPULAR
+.popular {
+  background-color: $color-white-1;
+  color: $color-dark-1;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__card {
+    max-width: 22.5rem;
+    border: 1px solid $color-white-2;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      box-shadow: 5px 10px 40px 0px rgba(214, 214, 214, 1);
+    }
+
+    &--image {
+      max-width: 22.5rem;
+      height: 18rem;
+
+      img {
+        width: 22.5rem;
+      }
+    }
+
+    &--description {
+      padding: 1.5rem;
+
+      h3 {
+        font-family: $bold;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 0.875rem;
+        color: $color-gray-1;
+        line-height: 1.3;
+        padding: 0.5rem 0 0.875rem 0;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        font-family: $semibold;
+        color: $color-primary-1;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+
+// BEANS
+.beans {
+  margin: 8rem 0;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  &__card {
+    background: $color-white-2;
+    color: $color-dark-1;
+    max-width: 1000px;
+    margin: 0 9rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    &--image {
+      img {
+        max-width: 24rem;
+      }
+    }
+
+    &--description {
+      flex: 0 0 600px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+
+      h1 {
+        font-family: $extrabold;
+        font-size: 2rem;
+      }
+
+      p {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__slider {
+    position: relative;
+
+    &--left,
+    &--right {
+      position: absolute;
+      top: -15rem;
+      border: none;
+      cursor: pointer;
+      height: 3.875rem;
+      outline: none;
+    }
+
+    &--left {
+      left: 6rem;
+    }
+    &--right {
+      right: 6rem;
+    }
+  }
+}
+
+// GALLERY
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0;
+
+  &__heading {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    &--image {
+      img {
+        width: 100%;
+      }
+    }
+
+    &--description {
+      text-transform: uppercase;
+
+      h3 {
+        font-family: $extrabold;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+      }
+
+      p {
+        font-family: $semibold;
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 6rem;
+        left: -2rem;
+      }
+    }
+  }
+}
+
+// TEAM
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem 0;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  &__card {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &--description {
+      h3 {
+        font-family: $extrabold;
+        text-transform: uppercase;
+        color: $color-primary-1;
+        padding: 1.5rem 0 0.5rem;
+      }
+    }
+  }
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 8rem 0;
+
+  &__heading {
+    font-size: 2rem;
+    font-family: $extrabold;
+    text-transform: uppercase;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+  }
+
+  &__information {
+    padding-right: 3rem;
+    padding-left: 4rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1rem;
+
+    p {
+      font-size: 1.125rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__map {
+    width: 100%;
+  }
+}

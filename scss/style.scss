@@ -1,0 +1,21 @@
+@import "base/variables";
+@import "base/typography";
+@import "base/reset";
+
+// VENDORS
+@import "vendor/slick-theme";
+@import "vendor/slick";
+
+// COMPONENTS
+@import "components/button";
+
+// LAYOUT
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/footer";
+
+// PAGES
+@import "pages/home";
+@import "pages/menu";
+@import "pages/event";
+@import "pages/contact";
